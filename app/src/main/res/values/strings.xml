@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">PET - Personal Expense Tracker</string>
+    <string name="app_name">Defender - Personal Expense Tracker</string>
     <string name="title_categories">Categories</string>
     <string name="category_name">Category Name</string>
     <string name="add_category">Add Category</string>
