@@ -1,4 +1,4 @@
-package com.example.prm392_personalexpensetracking.model;
+package com.example.personal_manager_expenses.model;
 
 public class CategoryReport {
     private Category category;
