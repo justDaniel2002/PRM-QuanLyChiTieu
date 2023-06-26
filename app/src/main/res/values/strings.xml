@@ -1,3 +1,45 @@
 <resources>
-    <string name="app_name">Personal-Manager-Expenses</string>
+    <string name="app_name">PET - Personal Expense Tracker</string>
+    <string name="title_categories">Categories</string>
+    <string name="category_name">Category Name</string>
+    <string name="add_category">Add Category</string>
+    <string name="Edit">Edit</string>
+    <string name="Add">Add</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_navigation">navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_report">Report</string>
+    <string name="title_settings">Settings</string>
+    <string name="add_expense_amount_placeholder">Enter amount</string>
+    <string name="add_expense_description_placeholder">Description (Optional)</string>
+    <string name="add_expense_date_placeholder">01 Jan 1999</string>
+    <string name="add_expense_today_chip">Today</string>
+    <string name="add_expense_yesterday_chip">Yesterday</string>
+    <string name="add_expense_custom_chip">Custom</string>
+    <string name="add_expense_save_btn">Save</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="fab_add_new">Add new</string>
+    <string name="fab_add_new_des">Add new expense</string>
+    <string name="title_date_placeholder">Jan, 1999</string>
+    <string name="back_button">Back button</string>
+    <string name="next_button">Next button</string>
+    <string name="expense_logo">Expenses logo</string>
+    <string name="money_placeholder">0</string>
+    <string name="expenses">Expenses</string>
+    <string name="balance_logo">Balance logo</string>
+    <string name="balance">Balance</string>
+    <string name="income_logo">Income logo</string>
+    <string name="income">Income</string>
+    <string name="addExpenseTitle">Add new expense</string>
+    <string name="delete">Delete</string>
+    <string name="transaction_category_icon">Transaction category icon</string>
+    <string name="dashboardExpenseItemTitlePlaceholder">Shopping</string>
+    <string name="dashboardExpenseItemDesPlaceholder">soap, milk</string>
+    <string name="dashboardExpenseItemPricePlaceholder">0</string>
+    <string name="applogo">appLogo</string>
+    <string name="pricePlaceholder">0</string>
+    <string name="todo">TODO</string>
+    <string name="statistics">Statistics</string>
+    <string name="settings">Settings</string>
 </resources>

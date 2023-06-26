@@ -1,6 +1,6 @@
-package com.example.prm392_personalexpensetracking.model;
+package com.example.personal_manager_expenses.model;
 
-import com.example.prm392_personalexpensetracking.R;
+import com.example.personal_manager_expenses.R;
 
 import java.util.ArrayList;
 import java.util.stream.Collectors;
