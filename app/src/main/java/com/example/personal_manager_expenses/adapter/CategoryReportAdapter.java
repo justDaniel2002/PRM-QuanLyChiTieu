@@ -1,8 +1,6 @@
-package com.example.prm392_personalexpensetracking.adapter;
+package com.example.personal_manager_expenses.adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +12,11 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.prm392_personalexpensetracking.ExpenseActivity;
-import com.example.prm392_personalexpensetracking.MainActivity;
-import com.example.prm392_personalexpensetracking.R;
-import com.example.prm392_personalexpensetracking.model.Category;
-import com.example.prm392_personalexpensetracking.model.CategoryReport;
-import com.example.prm392_personalexpensetracking.model.Expense;
+import com.example.personal_manager_expenses.MainActivity;
+import com.example.personal_manager_expenses.R;
+import com.example.personal_manager_expenses.model.Category;
+import com.example.personal_manager_expenses.model.CategoryReport;
+
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;

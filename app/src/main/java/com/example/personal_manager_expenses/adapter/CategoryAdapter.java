@@ -1,4 +1,4 @@
-package com.example.prm392_personalexpensetracking.adapter;
+package com.example.personal_manager_expenses.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,8 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.prm392_personalexpensetracking.R;
-import com.example.prm392_personalexpensetracking.model.Category;
+
+import com.example.personal_manager_expenses.R;
+import com.example.personal_manager_expenses.model.Category;
 
 import java.util.List;
 
