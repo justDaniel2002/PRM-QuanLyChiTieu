@@ -1,4 +1,4 @@
-package com.example.prm392_personalexpensetracking.ui.settings;
+package com.example.personal_manager_expenses.ui.settings;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

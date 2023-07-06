@@ -1,4 +1,4 @@
-package com.example.prm392_personalexpensetracking.ui.settings;
+package com.example.personal_manager_expenses.ui.settings;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -16,10 +16,10 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
-import com.example.prm392_personalexpensetracking.LoginActivity;
-import com.example.prm392_personalexpensetracking.MainActivity;
-import com.example.prm392_personalexpensetracking.R;
-import com.example.prm392_personalexpensetracking.databinding.FragmentSettingsBinding;
+import com.example.personal_manager_expenses.LoginActivity;
+import com.example.personal_manager_expenses.MainActivity;
+import com.example.personal_manager_expenses.R;
+import com.example.personal_manager_expenses.databinding.FragmentSettingsBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
@@ -63,7 +63,8 @@ public class SettingsFragment extends Fragment {
 
         if(MainActivity.displayName.length() == 0)
             saveProfileInfo();
-        textViewUsername.setText(MainActivity.displayName);
+        textViewUsername.setText(MainActivity
+                .displayName);
         textViewEmail.setText(MainActivity.email);
 
         currencyBtn = binding.chooseCurrencyBtn;
