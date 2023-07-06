@@ -1,9 +1,6 @@
-package com.example.prm392_personalexpensetracking;
+package com.example.personal_manager_expenses;
 
 import static android.content.ContentValues.TAG;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Dialog;
 import android.content.Intent;
@@ -15,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -54,11 +54,6 @@ public class LoginActivity extends AppCompatActivity {
         suggestSignUpBtn = findViewById(R.id.suggestRegisterBtn);
         forgotPasswordBtn = findViewById(R.id.forgotPasswordBtn);
 
-        suggestSignUpBtn.setOnClickListener(view ->
-            startActivity(new Intent(LoginActivity.this, RegisterActivity.class))
-        );
-
-        forgotPasswordBtn.setOnClickListener(view -> showResetDialog());
 
         loginBtn.setOnClickListener(view -> {
             signIn();
@@ -100,39 +95,6 @@ public class LoginActivity extends AppCompatActivity {
         }
     }
 
-    private void showResetDialog() {
-        dialog = new Dialog(this);
-        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        dialog.setCancelable(true);
-        dialog.setContentView(R.layout.forgot_password_dialog);
 
-        TextInputEditText emailInput = dialog.findViewById(R.id.resetEmailTextInput);
-        Button sendResetMailBtn = dialog.findViewById(R.id.sendResetMailBtn);
-        Button submitButton = dialog.findViewById(R.id.saveBtn);
-
-        sendResetMailBtn.setOnClickListener(view -> {
-            String emailInputText = emailInput.getText().toString();
-            sendResetMail(emailInputText);
-        });
-
-        submitButton.setOnClickListener(view -> {
-            dialog.dismiss();
-        });
-
-        dialog.show();
-    }
-
-    private void sendResetMail(String email){
-        FirebaseAuth.getInstance().sendPasswordResetEmail(email)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(LoginActivity.this, "Email sent!",
-                                    Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-    }
 
 }
