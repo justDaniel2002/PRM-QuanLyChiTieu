@@ -1,4 +1,4 @@
-package com.example.prm392_personalexpensetracking.ui.home;
+package com.example.personal_manager_expenses.ui.home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,12 +14,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.prm392_personalexpensetracking.ExpenseActivity;
-import com.example.prm392_personalexpensetracking.MainActivity;
-import com.example.prm392_personalexpensetracking.adapter.ExpensesDayAdapter;
-import com.example.prm392_personalexpensetracking.databinding.FragmentHomeBinding;
-import com.example.prm392_personalexpensetracking.model.Category;
-import com.example.prm392_personalexpensetracking.model.Expense;
+import com.example.personal_manager_expenses.ExpenseActivity;
+import com.example.personal_manager_expenses.MainActivity;
+import com.example.personal_manager_expenses.adapter.ExpensesDayAdapter;
+import com.example.personal_manager_expenses.databinding.FragmentHomeBinding;
+import com.example.personal_manager_expenses.model.Category;
+import com.example.personal_manager_expenses.model.Expense;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -29,7 +30,6 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QuerySnapshot;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 
