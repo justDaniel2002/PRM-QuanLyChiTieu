@@ -13,7 +13,7 @@
         android:theme="@style/Theme.PersonalManagerExpenses"
         tools:targetApi="31">
         <activity
-            android:name=".ReportFragment"
+            android:name=".ui.report.ReportFragment"
             android:exported="false" />
         <activity
             android:name=".ExpenseActivity"
