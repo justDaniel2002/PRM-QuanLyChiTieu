@@ -94,7 +94,18 @@ public class LoginActivity extends AppCompatActivity {
                     });
         }
     }
-
+    private void sendResetMail(String email){
+        FirebaseAuth.getInstance().sendPasswordResetEmail(email)
+                .addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(LoginActivity.this, "Email sent!",
+                                    Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+    }
 
 
 }
