@@ -1,4 +1,4 @@
-package com.example.personal_manager_expenses.ui.report;
+package com.example.prm392_personalexpensetracking.ui.report;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -11,19 +11,18 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.personal_manager_expenses.MainActivity;
-import com.example.personal_manager_expenses.adapter.CategoryReportAdapter;
-import com.example.personal_manager_expenses.databinding.FragmentReportBinding;
-import com.example.personal_manager_expenses.model.Category;
-import com.example.personal_manager_expenses.model.CategoryReport;
-import com.example.personal_manager_expenses.model.Expense;
+import com.example.prm392_personalexpensetracking.MainActivity;
+import com.example.prm392_personalexpensetracking.adapter.CategoryReportAdapter;
+import com.example.prm392_personalexpensetracking.databinding.FragmentReportBinding;
+import com.example.prm392_personalexpensetracking.model.Category;
+import com.example.prm392_personalexpensetracking.model.CategoryReport;
+import com.example.prm392_personalexpensetracking.model.Expense;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.PieData;
@@ -45,7 +44,6 @@ import java.util.Map;
 import java.util.Set;
 
 public class ReportFragment extends Fragment {
-
     private FragmentReportBinding binding;
     private RecyclerView mRecyclerView;
     private CategoryReportAdapter mExpenseAdapter;
@@ -58,10 +56,10 @@ public class ReportFragment extends Fragment {
     private ArrayList<Expense> expenseArrayList;
     private Map<Integer, ArrayList<Expense>> catReportMap;
     private ArrayList<CategoryReport> catRenderList = new ArrayList<>();
-   /* private ArrayList<PieEntry> incomePieEntries = new ArrayList<>();
-    private ArrayList<PieEntry> outcomePieEntries = new ArrayList<>();*/
+    private ArrayList<PieEntry> incomePieEntries = new ArrayList<>();
+    private ArrayList<PieEntry> outcomePieEntries = new ArrayList<>();
 
-    /*PieChart pieChartIncome, pieChartOutcome;*/
+    PieChart pieChartIncome, pieChartOutcome;
 
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         binding = FragmentReportBinding.inflate(inflater, container, false);
@@ -78,8 +76,8 @@ public class ReportFragment extends Fragment {
         prevMonthBtn = binding.prevMonthBtn;
         nextMonthBtn = binding.nextMonthBtn;
 
-//        pieChartIncome = binding.reportPieChartIncome;
-//        pieChartOutcome = binding.reportPieChartOutcome;
+        pieChartIncome = binding.reportPieChartIncome;
+        pieChartOutcome = binding.reportPieChartOutcome;
 
         prevMonthBtn.setOnClickListener(view -> {
             currentMonth.add(Calendar.MONTH, -1);
@@ -106,8 +104,8 @@ public class ReportFragment extends Fragment {
         Calendar tmpCal = Calendar.getInstance();
         totalExpenses = 0;
         totalIncome = 0;
-//        outcomePieEntries.clear();
-//        incomePieEntries.clear();
+        outcomePieEntries.clear();
+        incomePieEntries.clear();
         fStore.collection("Data").document(fAuth.getUid()).collection("Expenses").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
