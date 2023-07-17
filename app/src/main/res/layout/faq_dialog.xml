@@ -7,63 +7,103 @@
     android:orientation="vertical">
 
     <TextView
-        android:id="@+id/forgotPasswordHeader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/inter_medium"
+        android:id
+            ="@+id/forgotPasswordHeader"
+        android:layout_width
+            ="wrap_content"
+        android:layout_height
+            ="wrap_content"
+        android:layout_marginBottom
+            ="16dp"
+        android:fontFamily
+            ="@font/inter_medium"
         android:text="FAQs"
-        android:textColor="@color/black"
+        android:textColor
+            ="@color/black"
         android:textSize="24sp"
         android:textStyle="bold" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="24dp"
+        android:layout_width
+            ="match_parent"
+        android:layout_height
+            ="wrap_content"
+        android:layout_marginTop
+            ="12dp"
+        android:layout_marginBottom
+            ="24dp"
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/faqContent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/inter"
-            android:text="1. Sử dụng PET có mất phí không?"
-            android:textAlignment="viewStart"
+            android:id
+                ="@+id/faqContent"
+            android:layout_width
+                ="match_parent"
+            android:layout_height
+                ="wrap_content"
+            android:fontFamily
+                ="@font/inter"
+            android:text
+                ="1. Sử dụng PET có mất phí không?"
+            android:textAlignment
+                ="viewStart"
             android:textSize="16sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/faqContent2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/inter"
-            android:text="Khi bạn tải xuống ứng dụng từ chúng tôi, bạn hoàn toàn được sử dụng miễn phí "
-            android:textAlignment="viewStart"
-            android:textSize="16sp" />
+            android:id
+                ="@+id/faqContent2"
+            android:layout_width
+                ="match_parent"
+            android:layout_height
+                ="wrap_content"
+            android:layout_marginTop
+                ="8dp"
+            android:fontFamily
+                ="@font/inter"
+            android:text
+                ="Khi bạn tải xuống ứng dụng từ chúng tôi, bạn hoàn toàn được sử dụng miễn phí "
+            android:textAlignment
+                ="viewStart"
+            android:textSize
+                ="16sp" />
 
         <TextView
-            android:id="@+id/faqContent7"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:fontFamily="@font/inter"
-            android:text="2. Làm sao tôi có thể nâng cấp lên phiên bản Premium"
-            android:textAlignment="viewStart"
-            android:textSize="16sp"
+            android:id
+                ="@+id/faqContent7"
+            android:layout_width
+                ="match_parent"
+            android:layout_height
+                ="wrap_content"
+            android:layout_marginTop
+                ="16dp"
+            android:fontFamily
+                ="@font/inter"
+            android:text
+                ="2. Làm sao tôi có thể nâng cấp lên phiên bản Premium"
+            android:textAlignment
+                ="viewStart"
+            android:textSize
+                ="16sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/faqContent8"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:fontFamily="@font/inter"
-            android:text="Hiện tại chúng tôi vẫn đang phát triển phiên bản premium và sẽ tới tay các bạn trong thời gian sớm nhất"
-            android:textAlignment="viewStart"
-            android:textSize="16sp" />
+            android:id
+                ="@+id/faqContent8"
+            android:layout_width
+                ="match_parent"
+            android:layout_height
+                ="wrap_content"
+            android:layout_marginTop
+                ="8dp"
+            android:fontFamily
+                ="@font/inter"
+            android:text
+                ="Hiện tại chúng tôi vẫn đang phát triển phiên bản premium và sẽ tới tay các bạn trong thời gian sớm nhất"
+            android:textAlignment
+                ="viewStart"
+            android:textSize
+                ="16sp" />
 
         <TextView
             android:id="@+id/faqContent9"
@@ -71,7 +111,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:fontFamily="@font/inter"
-            android:text="Nếu bạn có thêm câu hỏi, vui lòng liên hệ với chúng tôi qua contact@pet.me"
+            android:text
+                ="Nếu bạn có thêm câu hỏi, vui lòng liên hệ với chúng tôi qua contact@pet.me"
             android:textAlignment="center"
             android:textSize="16sp" />
 
